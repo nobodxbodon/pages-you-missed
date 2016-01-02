@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Pages You Missed</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+      label {
+        display: block;
+      }
+      .message {
+        height: 20px;
+        background: #eee;
+        padding: 5px;
+      }
+      .wrapper {
+        border:1px solid #000;
+        display:inline-block;
+      }
+    
+      div.linktitle {
+        font-size: 18px;
+      }
+      div.linkurl {
+        font-size: 14px;
+        color: #006621;
+      }
+      input,
+      button {
+          background-color:transparent;
+          border:0;
+      }
+      .box-shadow{
+        -webkit-box-shadow:  3px 3px 3px 3px #999;
+        box-shadow:  3px 3px 3px 3px #999;
+      }
+    
+    .input-prepend, .input-prepend.input-fullwidth .input-wrapper { 
+      -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+              border-radius: 3px;
+    }
+    
+    .input-prepend.input-fullwidth {
+        position: relative;
+        display: block;
+    }
+    .input-prepend.input-fullwidth .btn {
+        width: 70px;
+    }
+    .input-prepend.input-fullwidth .input-wrapper {
+        position: absolute;
+        display: block;
+        left: 70px; /* 40 + 2*5 - 1 */
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .input-prepend.input-fullwidth .input-wrapper input {
+        width: 100%;
+        height: 100%;
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;
+    }
+
+    /* with keywords behind folder so that the folders with keywords will highlight */ 
+     span.withkeywords a
+     {
+        font-weight: bold;
+        /*background-color: silver;*/
+        color: navy;
+     }
+    </style>
+  </head>
+  <body>
+    <div id="search" class="input-prepend box-shadow input-fullwidth">
+      <input id="submitKeywords" type="submit" value="Search" class="btn primary"></input>
+      <div class="input-wrapper">
+        <input type="text" id="keywords" placeholder="Search by keyword..."/>
+      </div>
+    </div>
+    <div class="links"></div>
+    <script src="Dexie.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>
